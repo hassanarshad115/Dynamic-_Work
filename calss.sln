@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calss", "calss\calss.csproj", "{EBCD9867-1EBD-4E37-A398-75A0208C90A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBCD9867-1EBD-4E37-A398-75A0208C90A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCD9867-1EBD-4E37-A398-75A0208C90A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCD9867-1EBD-4E37-A398-75A0208C90A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBCD9867-1EBD-4E37-A398-75A0208C90A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06CC1734-FF79-4A83-A286-7CF54A0031E2}
+	EndGlobalSection
+EndGlobal
