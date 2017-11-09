@@ -16,5 +16,18 @@ namespace calss
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim() == string.Empty)
+            {
+                DialogResult resullt = MessageBox.Show("Do you want to Delete Record ?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (resullt == DialogResult.Yes)
+                {
+                    MessageBox.Show(" Successfully hogya yra");
+                }
+            }
+        }
     }
 }

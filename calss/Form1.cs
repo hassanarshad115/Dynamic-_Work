@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace calss
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Syncfusion.Windows.Forms.MetroForm
     {
         public Form1()
         {
@@ -37,30 +37,36 @@ namespace calss
             
         }
 
-        private void AddNewForm()
+        private void AddNewForm() //HASSAN MALIK
         {
             Form obj = new Form();
             obj.Text = "Create By Button";
             obj.StartPosition = FormStartPosition.CenterScreen;
+            //obj.BackColor = Color.Red;
+           
 
             TextBox t = TextBoxOne(obj); // txtbox k lye
             t.Text = textBox1.Text; //txtbox k lye
 
 
-            TextBox t1 = new TextBox();
+            TextBox t1 = new TextBox(); // for txtbox
             obj.Controls.Add(t1);
+
             Point p1 = new Point(30, 100);
             t1.Location = p1;
             t1.Width = 150;
             t1.Text = textBox2.Text;
 
-            Point loc = new Point(0, 32);
+            Point loc = new Point(0, 32); // for label
             Label l = new Label();
             obj.Controls.Add(l);
             l.Text = "First Name Is =";
             l.Location = loc;
 
+            
+            
 
+            // HASSAN MALIK
 
 
             obj.Show();
