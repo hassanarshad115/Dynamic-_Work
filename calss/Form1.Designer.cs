@@ -38,14 +38,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(112, 71);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
+            this.textBox1.Size = new System.Drawing.Size(422, 20);
             this.textBox1.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.textBox1, "Click here for text");
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // button2
@@ -55,10 +57,10 @@
             this.button2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.button2.Location = new System.Drawing.Point(112, 165);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 26);
+            this.button2.Size = new System.Drawing.Size(422, 26);
             this.button2.TabIndex = 3;
             this.button2.Text = "&By &Coding &Create &Form";
-            this.toolTip1.SetToolTip(this.button2, "Click for dynamic creating form");
+            this.toolTip2.SetToolTip(this.button2, "Click here for Create Dynamic Form");
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -66,7 +68,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(112, 120);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 20);
+            this.textBox2.Size = new System.Drawing.Size(422, 20);
             this.textBox2.TabIndex = 1;
             // 
             // label1
@@ -104,20 +106,35 @@
             // 
             this.button1.Location = new System.Drawing.Point(112, 206);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 23);
+            this.button1.Size = new System.Drawing.Size(422, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "&Go To Form2";
             this.toolTip1.SetToolTip(this.button1, "Go to the new available form");
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.toolTip1.ForeColor = System.Drawing.Color.Red;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Hassan";
+            // 
+            // toolTip2
+            // 
+            this.toolTip2.IsBalloon = true;
+            this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.toolTip2.ToolTipTitle = "Warning";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Maroon;
             this.CaptionButtonColor = System.Drawing.Color.Black;
             this.CaptionButtonHoverColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(311, 241);
+            this.ClientSize = new System.Drawing.Size(546, 288);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -145,6 +162,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 

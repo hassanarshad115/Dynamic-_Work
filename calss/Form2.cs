@@ -16,6 +16,7 @@ namespace calss
         {
             InitializeComponent();
         }
+        object a = 5;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -28,6 +29,28 @@ namespace calss
                     MessageBox.Show(" Successfully hogya yra");
                 }
             }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsDigit(ch) )
+            {
+                e.Handled = true;
+                MessageBox.Show("Enter Only String Data", "Warninng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)//txtbox pr dbl click kr k
+        {
+            Control c =(Control) sender;
+            c.BackColor = Color.Red;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            textBox2.Text =Convert.ToString( a);
         }
     }
 }

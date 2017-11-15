@@ -8,7 +8,7 @@ namespace calss
 {
     public class PropertiesClass
     {
-        public static string dis { get; set; }
+        public static string DisplayProperties { get; set; }
         //private string display;
         //public string Display
         //{
